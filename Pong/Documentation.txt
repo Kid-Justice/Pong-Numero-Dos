@@ -5,3 +5,5 @@ Roles:
 
 Progress
 
+Nov 6 5:21 PM Paddles Script finished, arrow keys.
+Sometime later finished a divider to show what side.
