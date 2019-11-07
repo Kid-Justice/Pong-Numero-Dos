@@ -1,0 +1,3 @@
+Raw english.
+
+WHen ball hits paddle: Reverse the vector aka flip the x and the y of the vector when ball hits paddle or upper wall.
