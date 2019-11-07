@@ -1,0 +1,7 @@
+Roles:
+- Kaijie: Producer. Takes care of documentation and whatever.
+- Drew: Tech Lead, Director. Does the heavy lifting in programming and has the final say of decisions.
+- Hugo: Design Lead. Checks to see that it is looking and playing good.
+
+Progress
+
