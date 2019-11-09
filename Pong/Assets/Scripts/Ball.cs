@@ -11,7 +11,8 @@ public class Ball : MonoBehaviour
     public float XMax = 8f;
     public int LeftOrRight = 0;
     public int UpOrDown = 0;
-    bool SpacePressed = false;
+    public bool SpacePressed = false;
+    public bool ForcedStart = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,11 @@ public class Ball : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = Velocity;
             SpacePressed = true;
+        }
+        if (ForcedStart)
+        {
+            GetComponent<Rigidbody2D>().velocity = Velocity;
+            ForcedStart = false;
         }
 
     }

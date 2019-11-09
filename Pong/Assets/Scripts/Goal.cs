@@ -4,35 +4,30 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
-    public int Player = 1;
-    public GameObject GMObject;
+    public float Edge = 8.5f;
+    GameObject GMObject;
     GameManager GM;
     // Start is called before the first frame update
     void Start()
     {
+        GMObject = GameObject.FindGameObjectWithTag("GameManager");
         GM = GMObject.GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Ball BallScript = collision.gameObject.GetComponent<Ball>();
-        if (BallScript != null)
+        if (transform.position.x >= Edge)
         {
-            switch (Player)
-            {
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-            }
+            GM.Player1Score++;
+            Destroy(gameObject);
+            GM.AddNewBall = true;
         }
-        Destroy(collision.gameObject);
+        else if (transform.position.x <= -Edge)
+        {
+            GM.Player2Score++;
+            Destroy(gameObject);
+            GM.AddNewBall = true;
+        }
     }
 }

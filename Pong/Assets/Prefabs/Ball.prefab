@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4137549334027916338}
   - component: {fileID: 4137549334027916342}
   - component: {fileID: 4137549334027916343}
+  - component: {fileID: 1077427983}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -101,6 +102,7 @@ MonoBehaviour:
   XMax: 8
   LeftOrRight: 0
   UpOrDown: 0
+  SpacePressed: 0
 --- !u!50 &4137549334027916342
 Rigidbody2D:
   serializedVersion: 4
@@ -138,3 +140,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1077427983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137549334027916339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a1d0acf4a7bee419597c4dee4cdc17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Edge: 8.5
+  GMObject: {fileID: 0}
