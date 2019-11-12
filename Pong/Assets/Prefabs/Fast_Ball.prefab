@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: {x: 0.15, y: 0}
-  YMax: 4
-  YMin: 4
+  YMax: 15
+  YMin: 5
   XMin: 35
   XMax: 35
   LeftOrRight: 0
