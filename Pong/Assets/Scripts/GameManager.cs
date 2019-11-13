@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public int Player1Score = 0;
     public int Player2Score = 0;
+    public int NumberOfBalls = 1;
     public bool AddNewBall = false;
     public GameObject ball;
     public string LoadWinLevel1;
@@ -26,11 +27,11 @@ public class GameManager : MonoBehaviour
             newBall.GetComponent<Ball>().ForcedStart = true;
             AddNewBall = false;
         }
-        if (Player1Score == 10)
+        if (Player1Score == 999)
         {
             SceneManager.LoadScene(LoadWinLevel1);
         }
-        else if (Player2Score == 10)
+        else if (Player2Score == 999)
         {
             SceneManager.LoadScene(LoadWinLevel2);
         }
