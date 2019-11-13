@@ -27,11 +27,11 @@ public class GameManager : MonoBehaviour
             newBall.GetComponent<Ball>().ForcedStart = true;
             AddNewBall = false;
         }
-        if (Player1Score == 999)
+        if (Player1Score == 10)
         {
             SceneManager.LoadScene(LoadWinLevel1);
         }
-        else if (Player2Score == 999)
+        else if (Player2Score == 10)
         {
             SceneManager.LoadScene(LoadWinLevel2);
         }
