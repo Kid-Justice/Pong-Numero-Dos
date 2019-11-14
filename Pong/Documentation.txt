@@ -18,4 +18,4 @@ Nov 12 sometime Font Fast Pong "FFong" made with fuzzy default text. Start menu 
 chosen and working on sprites to fit. Sounds(not sure what specifically) in progress.
 
 Nov 13 3:54 PM Font for "FFong" made unfuzzy and font changed. 4:58 PM Sounds for original pong done. 5:16 Bounce Correction Done. Background music done. 
-5:40 PM Sound expiration script done.
+5:40 PM Sound expiration script done. Background done.
