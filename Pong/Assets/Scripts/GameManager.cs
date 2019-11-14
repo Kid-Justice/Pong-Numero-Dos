@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public int Player1Score = 0;
     public int Player2Score = 0;
+    public int NumberOfBalls = 1;
     public bool AddNewBall = false;
     public GameObject ball;
     public string LoadWinLevel1;

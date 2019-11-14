@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Velocity: {x: 0.15, y: 0}
   YMax: 4
-  YMin: 1.5
+  YMin: 2
   XMin: 10
   XMax: 10
   LeftOrRight: 0
@@ -788,6 +788,7 @@ GameObject:
   - component: {fileID: 984331306}
   - component: {fileID: 984331305}
   - component: {fileID: 984331304}
+  - component: {fileID: 984331308}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -904,6 +905,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984331308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984331303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c72118b2ed10f64a9e7520e7e79fb84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &996247914
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +929,7 @@ GameObject:
   - component: {fileID: 996247917}
   - component: {fileID: 996247916}
   - component: {fileID: 996247915}
+  - component: {fileID: 996247919}
   m_Layer: 0
   m_Name: Roof
   m_TagString: Untagged
@@ -1032,6 +1046,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &996247919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996247914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c72118b2ed10f64a9e7520e7e79fb84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1116290292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player1Score: 0
   Player2Score: 0
+  NumberOfBalls: 1
   AddNewBall: 0
   ball: {fileID: 4137549334027916339, guid: 68709ef9dde7aeb40a8c9d1fb8a72400, type: 3}
   LoadWinLevel1: Win1
@@ -1401,6 +1428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407068412246569240, guid: 34537f2ca2f7fa34ab76317f4b59c79c,
+        type: 3}
+      propertyPath: YMin
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6407068412246569242, guid: 34537f2ca2f7fa34ab76317f4b59c79c,
         type: 3}

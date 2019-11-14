@@ -13,6 +13,7 @@ public class Ball : MonoBehaviour
     public int UpOrDown = 0;
     public bool SpacePressed = false;
     public bool ForcedStart = false;
+    float previousVelocity = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,13 +52,19 @@ public class Ball : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = Velocity;
             ForcedStart = false;
         }
+        previousVelocity = GetComponent<Rigidbody2D>().velocity.y;
 
     }
-    /* private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        PaddleMove1 Paddle1 = collision.gameObject.GetComponent<PaddleMove1>();
-        PaddleMove2 Paddle2 = collision.gameObject.GetComponent<PaddleMove2>();
-        
-    }
-    */
+        Floor floor = collision.gameObject.GetComponent<Floor>();
+        if (floor != null)
+        {
+            if (GetComponent<Rigidbody2D>().velocity.y == 0)
+            {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, previousVelocity * -1);
+            }
+        }
+
+    }  
 }
