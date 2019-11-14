@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int BallCount = 1;
     int player1PreviousScore = 0;
     int player2PreviousScore = 0;
+    int scoredTimes = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,23 +31,24 @@ public class GameManager : MonoBehaviour
         {
             if (player1PreviousScore < Player1Score)
             {
-                BallCount++;
+                scoredTimes += Player1Score - player1PreviousScore;
                 player1PreviousScore = Player1Score;
-                for (int i = 0; i < BallCount; i++)
-                {
-                    GameObject newBall = Instantiate(ball, new Vector3(0, 0, 0), transform.rotation);
-                    newBall.GetComponent<Ball>().ForcedStart = true;
-                }
+
             }
             if (player2PreviousScore < Player2Score)
             {
-                BallCount++;
+                scoredTimes += Player2Score - player2PreviousScore;
                 player2PreviousScore = Player2Score;
+            }
+            if (scoredTimes >= BallCount)
+            {
+                BallCount++;
                 for (int i = 0; i < BallCount; i++)
                 {
                     GameObject newBall = Instantiate(ball, new Vector3(0, 0, 0), transform.rotation);
                     newBall.GetComponent<Ball>().ForcedStart = true;
                 }
+                scoredTimes = 0;
             }
             if (Player1Score >= ScoreToWin)
             {
