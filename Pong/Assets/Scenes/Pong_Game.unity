@@ -1192,8 +1192,11 @@ MonoBehaviour:
   NumberOfBalls: 1
   AddNewBall: 0
   ball: {fileID: 4137549334027916339, guid: 68709ef9dde7aeb40a8c9d1fb8a72400, type: 3}
+  ScoreToWin: 10
   LoadWinLevel1: Win1
   LoadWinLevel2: Win2
+  FastPong: 0
+  BallCount: 1
 --- !u!4 &1144457392
 Transform:
   m_ObjectHideFlags: 0
