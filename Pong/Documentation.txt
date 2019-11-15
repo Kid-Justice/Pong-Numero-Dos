@@ -19,3 +19,6 @@ chosen and working on sprites to fit. Sounds(not sure what specifically) in prog
 
 Nov 13 3:54 PM Font for "FFong" made unfuzzy and font changed. 4:58 PM Sounds for original pong done. 5:16 Bounce Correction Done. Background music done. 
 5:40 PM Sound expiration script done. Background done.
+
+Nov 14 3:50 something PM Fong now spawns more balls each time all the balls are scored until the end of the game. 4:04 PM Background put in. 
+4:10 Paddle now has the appropriate sprite.
