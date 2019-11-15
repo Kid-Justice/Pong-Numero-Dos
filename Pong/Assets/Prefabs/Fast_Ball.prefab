@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7810535536900248022}
   - component: {fileID: 7157072926707458690}
   - component: {fileID: 638956105164640806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 7677623507055124494}
   - component: {fileID: 6046050425842354998}
   - component: {fileID: 7920387201581899048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fast_Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}

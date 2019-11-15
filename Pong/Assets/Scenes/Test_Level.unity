@@ -553,7 +553,7 @@ MonoBehaviour:
   NumberOfBalls: 1
   AddNewBall: 0
   ball: {fileID: 7677623507055124490, guid: 6d1c21298ca4c4c469b7decd91429749, type: 3}
-  ScoreToWin: 10
+  ScoreToWin: 50
   LoadWinLevel1: Win1F
   LoadWinLevel2: Win2F
   FastPong: 1
@@ -583,6 +583,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fast_Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 7677623507055124490, guid: 6d1c21298ca4c4c469b7decd91429749,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3048853748166712608, guid: 6d1c21298ca4c4c469b7decd91429749,
         type: 3}
@@ -688,6 +693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655616687393113546, guid: 6d1c21298ca4c4c469b7decd91429749,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d1c21298ca4c4c469b7decd91429749, type: 3}
