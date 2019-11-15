@@ -44,14 +44,10 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SpacePressed == false && Input.GetKey(KeyCode.Space))
+        if ((SpacePressed == false && Input.GetKey(KeyCode.Space)) || ForcedStart)
         {
             GetComponent<Rigidbody2D>().velocity = Velocity;
             SpacePressed = true;
-        }
-        if (ForcedStart)
-        {
-            GetComponent<Rigidbody2D>().velocity = Velocity;
             ForcedStart = false;
         }
         previousVelocity = GetComponent<Rigidbody2D>().velocity.y;
