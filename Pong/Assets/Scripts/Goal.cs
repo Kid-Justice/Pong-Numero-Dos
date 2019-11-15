@@ -7,6 +7,7 @@ public class Goal : MonoBehaviour
     public float Edge = 8.5f;
     GameObject GMObject;
     GameManager GM;
+    public GameObject ScoreSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +23,14 @@ public class Goal : MonoBehaviour
             GM.Player1Score++;
             Destroy(gameObject);
             GM.AddNewBall = true;
+            Instantiate(ScoreSound);
         }
         else if (transform.position.x <= -Edge)
         {
             GM.Player2Score++;
             Destroy(gameObject);
             GM.AddNewBall = true;
+            Instantiate(ScoreSound);
         }
     }
 }

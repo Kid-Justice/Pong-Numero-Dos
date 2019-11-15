@@ -111,6 +111,10 @@ MonoBehaviour:
   UpOrDown: 0
   SpacePressed: 0
   ForcedStart: 0
+  PaddleHitSound: {fileID: 4175990219924096390, guid: b4e2a6ea6d0a4d44cbb680c7b1ddebd4,
+    type: 3}
+  WallHitSound: {fileID: 9119672366446938231, guid: 11ab3b7524ef3cc4bac5e4dc70dcc2bb,
+    type: 3}
 --- !u!50 &7677623507055124495
 Rigidbody2D:
   serializedVersion: 4
@@ -161,6 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Edge: 8.5
+  ScoreSound: {fileID: 4601682711383683356, guid: 37711ac5fd10efc409ad9b74f9c4858a,
+    type: 3}
 --- !u!222 &7920387201581899048
 CanvasRenderer:
   m_ObjectHideFlags: 0

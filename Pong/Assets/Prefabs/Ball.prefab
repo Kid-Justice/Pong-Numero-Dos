@@ -104,6 +104,10 @@ MonoBehaviour:
   UpOrDown: 0
   SpacePressed: 0
   ForcedStart: 0
+  PaddleHitSound: {fileID: 119670352997246474, guid: b2f24965e167e1240a873a1cee884d75,
+    type: 3}
+  WallHitSound: {fileID: 2625001586025128110, guid: 7386f1ee26287bd45891f50cef06d927,
+    type: 3}
 --- !u!50 &4137549334027916342
 Rigidbody2D:
   serializedVersion: 4
@@ -154,3 +158,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Edge: 8.5
+  ScoreSound: {fileID: 6525281991171914067, guid: e163b22919360554ba842d684ee036ed,
+    type: 3}

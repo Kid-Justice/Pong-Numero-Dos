@@ -13,6 +13,8 @@ public class Ball : MonoBehaviour
     public int UpOrDown = 0;
     public bool SpacePressed = false;
     public bool ForcedStart = false;
+    public GameObject PaddleHitSound;
+    public GameObject WallHitSound;
     float previousVelocity = 1;
     // Start is called before the first frame update
     void Start()
@@ -58,12 +60,19 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Floor floor = collision.gameObject.GetComponent<Floor>();
+        PaddleMove1 P1 = collision.gameObject.GetComponent<PaddleMove1>();
+        PaddleMove2 P2 = collision.gameObject.GetComponent<PaddleMove2>();
         if (floor != null)
         {
+            Instantiate(WallHitSound);
             if (GetComponent<Rigidbody2D>().velocity.y == 0)
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, previousVelocity * -1);
             }
+        }
+        if (P1 != null || P2 != null)
+        {
+            Instantiate(PaddleHitSound);
         }
 
     }  
