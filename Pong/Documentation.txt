@@ -23,4 +23,4 @@ Nov 13 3:54 PM Font for "FFong" made unfuzzy and font changed. 4:58 PM Sounds fo
 Nov 14 3:50 something PM Fong now spawns more balls each time all the balls are scored until the end of the game. 4:04 PM Background put in. 
 4:10 Paddle now has the appropriate sprite. 4:24 Wall Sprite applied and done. 5:07 Sounds done.
 
-Nov 15 4:12 PM Wall sprite and background updated.
+Nov 15 4:12 PM Wall, ball, paddle and background sprites updated.
